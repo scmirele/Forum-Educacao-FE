@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: white;
+    
+}
+
+main{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 120px;
+    height: 29px;
+    margin-left: 100px;
+}
+
+#botao1{
+    margin-right: 100px;
+    background-color: #1C40FF;
+    border: none;
+    border-radius: 10px;
+    width: 177px;
+    height: 41px;
+    color: white;
+}
+
+#bem_vindo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#titulo{
+    color: #0C32FE;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#input{
+    display: flex;
+    flex-direction: column;
+}
+
+#botaoEmail , #botaoSenha{
+    width: 500px;
+    height: 50px;
+    border-radius: 50px;
+    padding-left: 20px;
+    border-color: #1B1B1B;
+    margin-top: 10px; 
+}
+
+#espcamento{
+    margin-top: 30px;
+}
+
+#esqueceu{
+    width: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+#check{
+    display: flex;
+    flex-direction: row;
+}
+
+#conectado{
+    margin-right: 10px;
+}
+
+#botaoEntrar{
+    width: 500px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: #0C32FE;
+    margin-top: 50px;
+    color: white;
+    font-size: medium;
+}
+
+#final{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
