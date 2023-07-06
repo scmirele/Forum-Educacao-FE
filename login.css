@@ -7,31 +7,31 @@
 
 body{
     background-color: white;
+    border: none;
     
 }
 
 main{
-    width: 100%;
+    width: 500px;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#logo{
-    width: 120px;
-    height: 29px;
-    margin-left: 100px;
+.logo{
+    width: 100px;
+    height: 100vh;
+    background-color: #0C32FE;
 }
 
-#botao1{
-    margin-right: 100px;
-    background-color: #1C40FF;
-    border: none;
-    border-radius: 10px;
-    width: 177px;
-    height: 41px;
-    color: white;
+#login{
+ margin-right: 265px;
+ color: #021680;
+ font-size: 32px;
+}
+#email{
+    margin-top: 30px;
 }
 
 #bem_vindo{
@@ -44,6 +44,12 @@ main{
 
 #titulo{
     color: #0C32FE;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#subtitulo{
+    font-weight: 600;
 }
 
 #container{
@@ -51,7 +57,8 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 10px; 
+    margin-left: 200px;
 }
 
 #input{
@@ -91,6 +98,11 @@ main{
     margin-right: 10px;
 }
 
+#botaoEntrar:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.2s;
+}
+
 #botaoEntrar{
     width: 500px;
     height: 50px;
@@ -104,6 +116,23 @@ main{
 
 #final{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-top: 15px;
+    
+}
+
+.senha{
+    color: #E50000;
+    text-decoration: none;
+}
+
+.cadastro{
+    color: #0C32FE;
+    text-decoration: none;
+}
+.tudo{
+    display: flex;
+    justify-content: row;
+    
 }
