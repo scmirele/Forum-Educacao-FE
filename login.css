@@ -19,10 +19,10 @@ main{
     align-items: center;
 }
 
-.logo{
-    width: 100px;
+#balaoazul {
     height: 100vh;
-    background-color: #0C32FE;
+    width: auto; 
+    display: block; 
 }
 
 #login{
