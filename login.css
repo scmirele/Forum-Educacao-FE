@@ -103,10 +103,7 @@ main{
     margin-right: 10px;
 }
 
-#botaoEntrar:hover{
-    transform: scale(1.1,1.1);
-    transition: 0.2s;
-}
+
 
 #botaoEntrar{
     width: 500px;
