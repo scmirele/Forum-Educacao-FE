@@ -14,15 +14,23 @@ p{
     display: flex;
 
 }
+#img{
+    height: 100vh;
+    width: auto;
+    display: block;
+}
 
 
 
 
 .cadastro {
-    margin-left: 336px;
-    margin-top: 250px;
-    width: 31.25rem;
-    height: 31.6875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 100px;
+    margin-top: 10px;
+  
 }
 
 
@@ -47,7 +55,7 @@ p{
 }
 
 .cadastro input[type="submit"] {
-    width: 100%;
+    width: 500px;
     height: 50px;
     border-radius: 50px;
     border: none;
@@ -59,6 +67,7 @@ p{
 
 }
 .ch{
+    
     display: flex;
    
 }

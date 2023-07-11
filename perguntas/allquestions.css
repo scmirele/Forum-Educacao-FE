@@ -156,17 +156,21 @@ main {
 }
 
 .question-subtitle {
+
   font-size: 18px;
   font-weight: 400;
+  text-align: left;
 }
 
 .question-answer {
+  padding: 15px;
   margin-left: 280px;
   color: #1B1B1B;
   line-height: 28px;
 }
 
 .question-answer-number {
+  
   font-size: 28px;
   font-weight: 600;
 }
@@ -176,7 +180,7 @@ main {
   font-weight: 400;
 }
 
-.fade {
+/* .fade {
   top: 0;
   left: 0;
   width: 100%;
@@ -184,10 +188,10 @@ main {
   position: fixed;
   background-color:rgba(27, 27, 27, 0.8);
   z-index: 5;
-}
+} */
 
 /* ************************* MODAL ************************* */
-form {
+/* form {
   display: flex;
   flex-direction: column;
 }
@@ -262,4 +266,4 @@ h2{
   margin-top: 50px;
   background-color:#0C32FE;
   color: white;
-}
+} */
