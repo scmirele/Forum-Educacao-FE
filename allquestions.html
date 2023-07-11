@@ -14,10 +14,9 @@
     <img class="icon-logo" id="logo" src="./assets/logo.svg" alt="logo ">
     <img src="./assets/icon-search.svg" alt="icon pesquisa" class="icon-search">
     <input class="search" type="search" placeholder="Procure por uma resposta">
-    <button class="cta">Faça sua pergunta
-      <a href="./modal.html">
+    <button class="cta">
+      <a href="" id="link-modal">Faça sua pergunta</a>
     </button>
-    
   </header>
   
   <main>
@@ -28,14 +27,18 @@
         </br>Compartilhe seus conhecimentos com quem precisa!</h1>
     </div>
 
-    <select class="options">
-      <option>Tecnologia</option>
-      <option>IA</option>
-      <option>Design</option>
-      <option>Back-end</option>
-      <option>Front-end</option>
-    </select>
-
+    <div class="options">
+      <img src="./assets/icon-filter.svg" alt="" class="icons-select">
+      <select class="select">
+        <option>Tecnologia</option>
+        <option>IA</option>
+        <option>Design</option>
+        <option>Back-end</option>
+        <option>Front-end</option>
+      </select>
+      <img src="./assets/icon-arrow.svg" alt="" class="icons-select">
+    </div>
+    
     <div class="questions">
       <button class="btn-questions">
         <img class="icon-check" src="./assets/icon-status.svg" alt="icon ckeck status">
@@ -45,8 +48,7 @@
         </span>
        <span class="question-answer">
             <p class="question-answer-number">3</p>
-            <p class="question-answer-word">Respostas
-            </p>
+            <p class="question-answer-word">Respostas</p>
           </span>
       </button>
 
@@ -71,8 +73,7 @@
           </span>
          <span class="question-answer">
             <p class="question-answer-number">3</p>
-            <p class="question-answer-word">Respostas
-            </p>
+            <p class="question-answer-word">Respostas</p>
           </span>
         </button>
 
@@ -126,6 +127,6 @@
         </button>
       </div>
     </main>
+    <script src="./allquestions.js"></script>
   </body>
 </html>
-

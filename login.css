@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: white;
+  border: none;
+  
+}
+
+main{
+  width: 500px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#balaoazul {
+  height: 100vh;
+  width: auto; 
+  display: block; 
+}
+
+#login{
+margin-right: 265px;
+color: #021680;
+font-size: 32px;
+font-weight: 700;
+
+}
+#email{
+  margin-top: 30px;
+}
+#senha{
+  margin-top: 30px;
+}
+
+#bem_vindo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px; 
+  margin-left: 100px;
+}
+
+#input{
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#botaoEmail , #botaoSenha{
+  width: 500px;
+  height: 50px;
+  border-radius: 50px;
+  padding-left: 20px;
+  border:  solid #1B1B1B ;
+  opacity: 80%;
+  margin-top: 10px; 
+}
+
+#espcamento{
+  margin-top: 30px;
+}
+
+#esqueceu{
+  width: 475px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 14px;
+
+}
+
+#check{
+  display: flex;
+  flex-direction: row;
+}
+
+#conectado{
+  margin-right: 10px;
+}
+
+
+
+#botaoEntrar{
+  width: 500px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: #0C32FE;
+  margin-top: 50px;
+  color: white;
+  font-size: medium;
+}
+
+#final{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  
+}
+
+.senha{
+  color: #E50000;
+  text-decoration: none;
+}
+
+.cadastro{
+  color: #0C32FE;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+.tudo{
+  display: flex;
+  justify-content: row;
+  
+}
+p{
+  font-weight: 500;
+  font-size: 14px;
+}
+#botaoSenha{
+  padding-top: 8px;
+}
