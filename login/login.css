@@ -53,7 +53,7 @@ font-weight: 700;
   align-items: center;
   flex-direction: column;
   margin-top: 10px; 
-  margin-left: 100px;
+  margin-left: 150px;
 }
 
 #input{
@@ -121,7 +121,7 @@ font-weight: 700;
 }
 
 .senha{
-  color: #E50000;
+  color: #4D53F4;
   text-decoration: none;
 }
 
