@@ -19,7 +19,7 @@ main{
   align-items: center;
 }
 
-#balaoazul {
+#logo {
   height: 100vh;
   width: auto; 
   display: block; 
@@ -27,7 +27,7 @@ main{
 
 #login{
 margin-right: 265px;
-color: #021680;
+color: #2A2E86;
 font-size: 32px;
 font-weight: 700;
 
@@ -106,7 +106,7 @@ font-weight: 700;
   height: 50px;
   border-radius: 50px;
   border: none;
-  background-color: #0C32FE;
+  background-color: #4D53F4;
   margin-top: 50px;
   color: white;
   font-size: medium;
@@ -126,7 +126,7 @@ font-weight: 700;
 }
 
 .cadastro{
-  color: #0C32FE;
+  color: #2A2E86;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;

@@ -4,46 +4,35 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
 
 p{
     font-size: 20px;
-
 }
 .container {
+
+width: 1440px;
+height: 800px;
     display: flex;
 
 }
-#img{
-    height: 100vh;
-    width: auto;
-    display: block;
-}
-
-
-
-
 .cadastro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    width: auto;
+    height: 580px;
     margin-left: 100px;
-    margin-top: 10px;
-  
 }
+.form{
+    display: flex;
 
+}
 
 .container h2 {
-    color: #021680;
+    color: #2A2E86;
     font-size: 32px;
     font-weight: 700;
     padding: 35px 0px;
-
-
-
 }
-
 
 .cadastro input[type="email"],
 .cadastro input[type="password"] {
@@ -60,32 +49,69 @@ p{
     border-radius: 50px;
     border: none;
     background-color: #1C40FF;
-    margin-top: 50px;
+    margin-top: 30px;
     color: #F4F4F4;
     font-size: 20px;
     font-weight: 600;
-
 }
 .ch{
-    
-    display: flex;
-   
+   display: flex;
+   font-size: medium;
+   margin-left: 20px;
 }
 .entra{
-    margin-left: 140px;
+    margin-left: 120px;
     padding: 30px 0px;
     font-size: 20px;
     font-weight: 500;
-
 }
 .link{
     text-decoration: none;
+    color: #2A2E86;
 }
-
-
 .login {
     
     width: 300px;
     display: inline-block;
-
+}
+#teste{
+    margin-left: 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+}
+#cadastro{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+}
+#cd{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+.entra{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+#botao{
+    width: 500px;
+    height: 50px;
+    border: none;
+    background-color: #4D53F4;
+    color: white;
+    border-radius: 50px;
+    font-size: larger;
+    margin-top: 30px;
+}
+#ja_tem{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#logo {
+    margin-left: 180px;
+    height: 650px;
+    display: block; 
 }

@@ -6,41 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Cadastro</title>
     <link rel="stylesheet" href="./cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <div class="container">
 
-        <div class="logo">
-            <img id="img" src="../assets/logo-circle.svg" alt="">
-        </div>
-
         <div class="cadastro">
             
             <div class="form">
-                <h2>Faça seu cadastro</h2>
+                
                 <form>
-                    <p>Email</p>
+                    <h2 id="cadastro">Faça seu cadastro</h2>
+                    <p id="cd">Email</p>
                     <input type="email" placeholder="exemplo@gmail.com" required>
-                    <p>Senha</p>
-                    <input type="password" placeholder="***" required>
-                    <p>Confirme sua senha </p>
-                    <input type="password" placeholder="***" required>
+                    <p id="cd">Senha</p>
+                    <input type="password" placeholder="*****" required>
+                    <p id="cd">Confirme sua senha </p>
+                    <input type="password" placeholder="*****" required>
 
                     <div class="ch"><input type="checkbox">
-                        <p>Mantenha-me conectado</p>
+                        <p id="teste">Mantenha-me conectado</p>
                     </div>
 
-                    <input type="submit" value="Cadastrar">
-                    <div class="entra">
+                    <button id="botao">Cadastrar</button>
+                    <div id="ja_tem">
                         <p>Já tem uma conta? <a class="link" href="../login/index.html"> Entrar</a></p>
                     </div>
+                    
 
                 </form>
             </div>
         </div>
+        <div class="logo">
+            <img id="logo" src="../assets/Group 29 (1).svg" alt="">
+        </div>
     </div>
+    
+   
+
 </body>
 
 </html>
