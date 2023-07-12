@@ -11,6 +11,11 @@ const toggleModal = () => {
   elemento.addEventListener('click', () => toggleModal());
 });
 
+
+async function listQuestion() {
+  const url = 'https://backend-question-production.up.railway.app/perguntas'
+}
+
 // let linkModal = document.querySelector('#link-modal')
 
 // let changeCheck = document.querySelector('.icon-check')

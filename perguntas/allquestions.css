@@ -44,9 +44,17 @@ header {
   border: 1.6px solid rgba(27, 27, 27, 0.70);
 }
 
+.div-search {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  
+}
+
 .icon-search {
+  margin-top: 13px;
+  margin-right: 28px;
   position: absolute;
-  padding-left: 54%;
 }
 
 .cta {
@@ -60,7 +68,7 @@ header {
   font-weight: 600;
   margin: 21px 10px;
   border-radius: 10px;
-  background: #1C40FF;
+  background: rgba(77, 83, 244, 1);
 }
 
 /* .cta a {
@@ -84,7 +92,7 @@ header {
 }
 
 .text-information-black-blue {
-  color: #0C32FE;
+  color: rgba(42, 46, 134, 1);
   font-weight: 700;
 }
 
