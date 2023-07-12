@@ -14,9 +14,7 @@
     <img class="icon-logo" id="logo" src="../assets/logo.svg" alt="logo ">
     <img src="../assets/icon-search.svg" alt="icon pesquisa" class="icon-search">
     <input class="search" type="search" placeholder="Procure por uma resposta">
-    <button class="cta">
-      <a href="../modal.html" id="link-modal">Faça sua pergunta</a>
-    </button>
+    <button class="cta" id="open-modal">Faça sua pergunta</button>
   </header>
   
   <main>
@@ -126,12 +124,12 @@
           </span>
         </button>
       </div>
-      <!-- <div class="fade"></div> -->
+      <div class="hide" id="fade"></div>
       <!-- ************************* MODAL *************************  -->
-      <!-- <div class="box">
+      <div class="hide" id="modal">
         <form>
             <div class="per">
-                <h1> Titulo da sua pergunta</h1>
+                <h1 class="h1-1"> Titulo da sua pergunta</h1>
                 <input type="text" name="text " class="titulo" placeholder="Exemplo: Duvida sobre....">
             </div>
             
@@ -140,20 +138,21 @@
     
             <input type="text" class="pergunta" placeholder = "Escreva aqui...">
     
-            <h2>Tags</h2>
+            <h2 class="tags">Tags</h2>
     
             <div class="btn-tg">
-              <button id="button" >tecnologia</button>
-              <button id="button" class="ia" meu-atributo="" >IA</button>
-              <button id="button">Front-End</button>
-              <button id="button">Back-End</button>
-              <button id="button">Design</button>
+              <button type="button" >Tecnologia</button>
+              <button type="button" class="ia" meu-atributo="" >IA</button>
+              <button type="button">Front-End</button>
+              <button type="button">Back-End</button>
+              <button type="button">Design</button>
             </div>
     
-            <button id="button">Enviar</button>
+            <button type="button" class="btn-enviar" id="close-modal">Enviar</button>
             
         </form>
-     </div> -->
+     </div>
+        
     </main>
     <script src="./allquestions.js"></script>
   </body>

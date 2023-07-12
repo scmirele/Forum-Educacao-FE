@@ -54,6 +54,8 @@ header {
   width: 177px;
   height: 41px;
   
+  cursor: pointer;
+  color: #F4F4F4;
   font-size: 14px;
   font-weight: 600;
   margin: 21px 10px;
@@ -61,11 +63,11 @@ header {
   background: #1C40FF;
 }
 
-.cta a {
+/* .cta a {
   text-decoration: none;
 
   color: #F4F4F4;
-}
+} */
 
 .information {
   margin-top: 55px;
@@ -180,7 +182,7 @@ main {
   font-weight: 400;
 }
 
-/* .fade {
+#fade {
   top: 0;
   left: 0;
   width: 100%;
@@ -188,26 +190,44 @@ main {
   position: fixed;
   background-color:rgba(27, 27, 27, 0.8);
   z-index: 5;
-} */
+}
 
 /* ************************* MODAL ************************* */
-/* form {
+#fade, 
+#modal {
+  transition: 0.4s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+#modal.hide,
+#fade.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#modal.hide {
+  top: 0;
+}
+
+form {
+  margin-bottom: 68px;
   display: flex;
   flex-direction: column;
 }
 
-.box{
-  transform: translate(-50%, -50%);
+#modal {
   position: fixed;
   left: 50%;
   top: 50%;
   z-index: 10;
-  width: 900px;
-  max-width: 90%:
-  height: 800px;
-  margin-top: 50px;
+  transform: translate(-50%, -50%);
+
+  width: 810px;
+  max-width: 90%;
+  height: 680px;
+
   background-color: white;
-  
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -216,25 +236,41 @@ main {
 }
 
 
-input{
-  margin-top: 20px;
+input {
+  margin-top: 15px;
   border-radius: 15px;
 }
 
-.titulo{
+.titulo {
   width: 706px;
   height: 60px;
+  border-radius: 10px;
+  border: 1.8px solid rgba(27, 27, 27, 0.60);
 }
 
-.pergunta{
+.pergunta {
   width: 706px;
   height: 167px;
+  border-radius: 10px;
+  border: 1.8px solid rgba(27, 27, 27, 0.60);
 }
-.h1-2{
+
+
+.h1-1 {
+  color: rgba(27, 27, 27, 0.95);
+  font-size: 22px;
+  font-weight: 700;
   margin-top: 60px;
 }
 
-h2{
+.h1-2{
+  color: rgba(27, 27, 27, 0.95);
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 60px;
+}
+
+.tags {
   margin-top: 30px;
 }
 
@@ -246,24 +282,29 @@ h2{
 }
 
 .btn-tg button{
+  border: none;
   padding: 15px;
   margin: 5px;
   text-align: center;
   font-size: 17px;
-  border-radius: 15px;
+  border-radius: 50px;
   background-color: #D9D9D9; 
   color: black;  
 }
+
 .ia{
   width: 92px;
   height: 50px;
 }
 
-#button{
-  width: 153px;
-  height: 47px;
+.btn-enviar {
+  cursor: pointer;
+  width: 133px;
+  height: 45px;
   border-radius: 10px;
-  margin-top: 50px;
+  margin-top: 15px;
+  border: none;
   background-color:#0C32FE;
   color: white;
-} */
+}
+
