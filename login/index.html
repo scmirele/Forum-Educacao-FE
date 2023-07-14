@@ -21,28 +21,31 @@
 
          <h1 id="login">Faça seu login</h1>
 
-        <div id="input" >
-            <label id="email" for="">Email</label>
-            <input id="botaoEmail" type="email" placeholder="exemplo@gmail.com">
-            <label id="senha" for="">Senha</label>
-            <input id="botaoSenha" type="password" placeholder="*****">
-        </div>
-  
-        <div id="esqueceu" >
-            <div id="check">
-                <input id="conectado" type="checkbox">
-                <h3>Mantenha-me conectado</h3>
+        <form id="formulario">
+            <div id="input" >
+                <label id="email" for="">Email</label>
+                <input id="botaoEmail" type="email" placeholder="exemplo@gmail.com">
+                <label id="senha" for="">Senha</label>
+                <input id="botaoSenha" type="password" placeholder="*****">
             </div>
-            <a class="senha" href="">Esqueceu a senha?</a>
-        </div>
+      
+            <div id="esqueceu" >
+                <div id="check">
+                    <input id="conectado" type="checkbox">
+                    <h3>Mantenha-me conectado</h3>
+                </div>
+                <a class="senha" href="">Esqueceu a senha?</a>
+          </div>
 
-            <a href="../perguntas/allquestions.html">
-                <button id="botaoEntrar" >Entrar</button>
-            </a>
+                
+                    <button type="submit" id="botaoEntrar" > Entrar</button>
+                
+        </form>
+        
 
         <div id="final" >
             <p>Ainda não tem uma conta? </p>
-            <a class="cadastro" href="../cadastro/cadastro.html"><p>Cadastre-se</p></a>
+            <a class="cadastro" id="link" href="../cadastro/cadastro.html"><p>Cadastre-se</p></a>
         </div>
       
     </div>
