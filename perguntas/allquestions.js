@@ -5,6 +5,11 @@ const modal = document.querySelector('#modal');
 
 const div = document.querySelector('.questions')
 
+// let openQuestion = document.querySelector('.btn-questions')
+
+// openQuestion.setAttribute('href', 'http://127.0.0.1:5501/respostas/respostas.html')
+// openQuestion.setAttribute('target', '_blank') 
+
 const toggleModal = () => {
   [modal, fade].forEach((elemento) => elemento.classList.toggle("hide"));
 };
@@ -12,14 +17,6 @@ const toggleModal = () => {
 [openModalButton, closeModalButton, fade].forEach((elemento) => {
   elemento.addEventListener('click', () => toggleModal());
 });
-
-
-
-let myInit = { method: 'GET',
-               mode: 'cors',
-               cache: 'default' };
-
-            
 
 async function listQuestions() {
   const url = 'https://backend-question-production.up.railway.app/perguntas'
@@ -30,8 +27,8 @@ async function listQuestions() {
       console.log(questions)
 
       questions.forEach((pergunta) => {
-        const { title, question } = pergunta
-        console.log(title, question)
+        const { title, question, quantedadeDeResposta } = pergunta
+        console.log(title, question, quantedadeDeResposta)
 
         let button = document.createElement('button')
         button.classList.add('btn-questions')
@@ -63,7 +60,7 @@ async function listQuestions() {
         
         questionTitle.textContent = title
         questionSubtitle.textContent = question
-        paragrafoNumber.textContent = '2'
+        paragrafoNumber.textContent = quantedadeDeResposta
         paragrafoWord.textContent = 'Respostas'
 
         div.appendChild(button)
@@ -71,31 +68,9 @@ async function listQuestions() {
         divInformations.append(img, spanQuestion)
         spanQuestion.append(questionTitle, questionSubtitle)
         spanAnswer.append(paragrafoNumber, paragrafoWord)
-
       })
     } catch (error) {
       console.log(error)
     }
   }
-
-    // const { usuario } = perguntas
-
-  
-
   listQuestions()
-
-//   const response = await fetch(url, {
-//     method: 'GET',
-//     headers: {
-//       'Content-Type': 'application/json'
-//       const perguntas = response.json()
-//     }
-//   })
-  
-  
-// }
-
-
-
-
-// listQuestions()
