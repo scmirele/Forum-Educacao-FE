@@ -40,7 +40,7 @@ font-weight: 700;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-left: 150px;
+  margin:0 auto;
 }
 
 #input{
@@ -125,4 +125,9 @@ p{
 
 #botaoSenha{
   padding-top: 8px;
+}
+#Entrar{
+  color: white;
+  font-size: larger;
+  text-decoration: none;
 }
