@@ -27,8 +27,8 @@ async function listQuestions() {
       console.log(questions)
 
       questions.forEach((pergunta) => {
-        const { title, question, quantedadeDeResposta } = pergunta
-        console.log(title, question, quantedadeDeResposta)
+        const { title, question, quantidadeDeRespostas } = pergunta
+        console.log(title, question, quantidadeDeRespostas)
 
         let button = document.createElement('button')
         button.classList.add('btn-questions')
@@ -60,7 +60,7 @@ async function listQuestions() {
         
         questionTitle.textContent = title
         questionSubtitle.textContent = question
-        paragrafoNumber.textContent = quantedadeDeResposta
+        paragrafoNumber.textContent = quantidadeDeRespostas
         paragrafoWord.textContent = 'Respostas'
 
         div.appendChild(button)

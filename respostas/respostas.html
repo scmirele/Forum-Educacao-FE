@@ -10,25 +10,34 @@
     <title>Respostas</title>
 </head>
 <body>
-    <header>
-        <img class="logo" src="../assets/logo.svg" alt="logo">
-        <input class="pesquisa" type="text" name="text" placeholder="Procure por uma resposta">
-        <button class="btn-pesquisa" type="button">Faça sua pergunta</button>
-    </header>
+    <header class="container">
+        <img class="icon-logo" id="logo" src="../assets/logo.svg" alt="logo ">
+        <div class="div-search">
+          <input class="search" src="../assets/icon-search.svg" type="search" placeholder="Procure por uma resposta">
+          <img src="../assets/icon-search.svg" alt="icon pesquisa" class="icon-search">
+        </div>
+        <button class="cta" id="open-modal">Faça sua pergunta</button>
+      </header>
 
     <div id="content">
         <div class="publi">
-            <h1>Where does it come from?</h1>
-            <p>Publicado 3 meses atrás.</p>
-            <button class="span">Back-End</button>
+            <h1 class="h1-title">Where does it come from?</h1>
+            <p class="p-date">Publicado 3 meses atrás.</p>
+            <span class="span">Back-End</span>
         </div>
     
         <!--parte do meio-->
         <div class="question">
-            <div class="img-ques"><img src="../assets/img-people (3).png" alt=""> </div>
-            <div class="h1-ques"><h1>Maria José Da Silva</h1>
-                <p>Essentially unchanged. It was popularised in the 1960s with the </p>
-                <input class="res" type="text" placeholder="Responder pergunta">
+            <div class="img-ques"><img src="../assets/img-people (3).png" alt=""></div>
+            <div class="h1-ques">
+                <h1 class="name-people">Maria José Da Silva</h1>
+                <p class="description">Essentially unchanged. It was popularised in the 1960s with the release 
+                of Letraset sheets containing</br>Lorem Ipsum passages, and more recently with 
+                desktop publishing software like Aldus PageMaker</br>including versions of Lorem Ipsum?</p>
+                <div class="send">
+                    <input class="res" type="text" placeholder="Responder pergunta">
+                    <img src="../assets/icon-send.svg" alt="icon enviar" class="icon-send">
+                </div>
             </div>  
         </div>
     

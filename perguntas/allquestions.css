@@ -20,13 +20,10 @@ body {
   display: flex;
 }
 
-
-  
 header {
   padding: 26px 103px 25px 101px;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .search {
@@ -41,7 +38,7 @@ header {
   background-repeat: no-repeat;
   color: rgba(27, 27, 27, 0.80);
   background: rgba(244, 244, 244, 1);
-  border: 1.6px solid rgba(27, 27, 27, 0.70);
+  border: 2px solid rgba(27, 27, 27, 0.70);
 }
 
 .div-search {
