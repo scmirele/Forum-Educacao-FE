@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./allquestions.css">
-  <title>Perguntas</title>
+  <title>Question</title>
 </head>
 <body>
   <header class="container">
@@ -18,7 +18,6 @@
     </div>
     <button class="cta" id="open-modal">Faça sua pergunta</button>
   </header>
-  
   <main>
     <div class="information">
       <img class="img-information" src="../assets/img-infomation.svg" alt="imagem tela colorida">
@@ -26,7 +25,6 @@
         <span class="text-information-black-blue">Tire suas dúvidas</span> ou,
         </br>Compartilhe seus conhecimentos com quem precisa!</h1>
     </div>
-
     <div class="options">
       <img src="../assets/icon-filter.svg" alt="" class="icons-select">
       <select class="select">
@@ -38,124 +36,29 @@
       </select>
       <img src="../assets/icon-arrow.svg" alt="" class="icons-select">
     </div>
-    
-    <div class="questions">
-      <button class="btn-questions">
-        <img class="icon-check" src="../assets/icon-status.svg" alt="icon ckeck status">
-        <span class="question">
-          <h2 class="question-title">Where does it come from?</h2>
-          <p class="question-subtitle"> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...</p>
-        </span>
-       <span class="question-answer">
-            <p class="question-answer-number">3</p>
-            <p class="question-answer-word">Respostas</p>
-          </span>
-      </button>
-
-        <button class="btn-questions">
-          <img class="icon-check" src="../assets/icon-status.svg" alt="icon ckeck status">
-          <span class="question">
-            <h2 class="question-title">Where does it come from?</h2>
-            <p class="question-subtitle"> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...</p>
-          </span>
-         <span class="question-answer">
-            <p class="question-answer-number">3</p>
-            <p class="question-answer-word">Respostas
-            </p>
-          </span>
-        </button>
-
-        <button class="btn-questions">
-          <img class="icon-check" src="../assets/icon-status.svg" alt="icon ckeck status">
-          <span class="question">
-            <h2 class="question-title">Where does it come from?</h2>
-            <p class="question-subtitle"> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...</p>
-          </span>
-         <span class="question-answer">
-            <p class="question-answer-number">3</p>
-            <p class="question-answer-word">Respostas</p>
-          </span>
-        </button>
-
-        <button class="btn-questions">
-          <img class="icon-check" src="../assets/icon-status-disable.svg" alt="icon ckeck status">
-          <span class="question">
-            <h2 class="question-title">Where does it come from?</h2>
-            <p class="question-subtitle"> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...</p>
-          </span>
-         <span class="question-answer">
-            <p class="question-answer-number">3</p>
-            <p class="question-answer-word">Respostas
-            </p>
-          </span>
-        </button>
-
-        <button class="btn-questions">
-          <img class="icon-check" src="../assets/icon-status-disable.svg" alt="icon ckeck status">
-          <span class="question">
-            <h2 class="question-title">Where does it come from?</h2>
-            <p class="question-subtitle"> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...</p>
-          </span>
-         <span class="question-answer">
-            <p class="question-answer-number">3</p>
-            <p class="question-answer-word">Respostas</p>
-          </span>
-
-        <button class="btn-questions">
-          <img class="icon-check" src="../assets/icon-status-disable.svg" alt="icon ckeck status">
-          <span class="question">
-            <h2 class="question-title">Where does it come from?</h2>
-            <p class="question-subtitle"> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...</p>
-          </span>
-          <span class="question-answer">
-            <p class="question-answer-number">3</p>
-            <p class="question-answer-word">Respostas
-            </p>
-          </span>
-        </button>
-
-        <button class="btn-questions">
-          <img class="icon-check" src="../assets/icon-status-disable.svg" alt="icon ckeck status">
-            <span class="question">
-              <h2 class="question-title">Where does it come from?</h2>
-              <p class="question-subtitle"> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...</p>
-            </span>
-            <span class="question-answer">
-              <p class="question-answer-number">3</p>
-              <p class="question-answer-word">Respostas</p>
-          </span>
-        </button>
-      </div>
-      <div class="hide" id="fade"></div>
+    <div class="questions"></div>
+    <div class="hide" id="fade"></div>
       <!-- ************************* MODAL *************************  -->
-      <div class="hide" id="modal">
-        <form>
-            <div class="per">
-                <h1 class="h1-1"> Titulo da sua pergunta</h1>
-                <input type="text" name="text " class="titulo" placeholder="Exemplo: Duvida sobre....">
-            </div>
-            
-    
-            <h1 class="h1-2">Faça uma pergunta</h1>      
-    
-            <input type="text" class="pergunta" placeholder = "Escreva aqui...">
-    
-            <h2 class="tags">Tags</h2>
-    
-            <div class="btn-tg">
-              <button type="button" >Tecnologia</button>
-              <button type="button" class="ia" meu-atributo="" >IA</button>
-              <button type="button">Front-End</button>
-              <button type="button">Back-End</button>
-              <button type="button">Design</button>
-            </div>
-    
-            <button type="button" class="btn-enviar" id="close-modal">Enviar</button>
-            
-        </form>
-     </div>
-        
-    </main>
-    <script src="./allquestions.js"></script>
+    <div class="hide" id="modal">
+      <form>
+        <div class="per">
+          <h1 class="h1-1"> Titulo da sua pergunta</h1>
+          <input type="text" name="text " class="titulo" placeholder="Exemplo: Duvida sobre....">
+        </div>
+        <h1 class="h1-2">Faça uma pergunta</h1>      
+        <input type="text" class="pergunta" placeholder = "Escreva aqui...">
+        <h2 class="tags">Tags</h2>
+        <div class="btn-tg">
+          <button type="button" >Tecnologia</button>
+          <button type="button" class="ia" meu-atributo="" >IA</button>
+          <button type="button">Front-End</button>
+          <button type="button">Back-End</button>
+          <button type="button">Design</button>
+        </div>
+        <button type="button" class="btn-enviar" id="close-modal">Enviar</button>  
+      </form>
+    </div>    
+  </main>
+  <script src="./allquestions.js"></script>
   </body>
 </html>
