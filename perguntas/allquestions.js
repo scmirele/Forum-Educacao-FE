@@ -1,14 +1,20 @@
-const openModalButton = document.querySelector('#open-modal');
-const closeModalButton = document.querySelector('#close-modal');
-const fade = document.querySelector('#fade');
-const modal = document.querySelector('#modal');
+let openModalButton = document.querySelector('#open-modal');
+let closeModalButton = document.querySelector('#close-modal');
+let fade = document.querySelector('#fade');
+let modal = document.querySelector('#modal');
 
-const div = document.querySelector('.questions')
+let div = document.querySelector('.questions')
 
-// let openQuestion = document.querySelector('.btn-questions')
+let btnQuestion = document.querySelector('.btn-questions')
 
-// openQuestion.setAttribute('href', 'http://127.0.0.1:5501/respostas/respostas.html')
-// openQuestion.setAttribute('target', '_blank') 
+const respostas = 'http://127.0.0.1:5501/respostas/respostas.html'
+
+function openAnswer(respostas) {
+   window.open(respostas, '_blank')
+}
+btnQuestion.addEventListener('click', () => {
+  openAnswer(respostas)
+})
 
 const toggleModal = () => {
   [modal, fade].forEach((elemento) => elemento.classList.toggle("hide"));
