@@ -22,19 +22,33 @@ async function loginUser(){
             body: JSON.stringify(dados)
         })
 
-        const dataLogin = await responseLogin.json()
-        console.log(dataLogin)
+        if(email && senha ){
+            const dataLogin = await responseLogin.json()
+            console.log(dataLogin)
+            window.location.href="http://127.0.0.1:5501/perguntas/allquestions.html"
+
+            button.addEventListener('click',()=>{
+                const info ={
+                    id: dataLogin.id,
+                    nome: dataLogin.nome,
+                    email: dataLogin.email,
+                    senha: dataLogin.senha,
+                    img: dataLogin.img
+                }
+                localStorage.setItem('info' ,JSON.stringify(info))
+             })
+             
+        }else{
+            alert('Preencha todos os campos vazios!')
+        }    
         
     } catch (error) {
-        alert('Usuário não encontrado')
+        alert('Usuário não encontrado!')
     }
 }
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault()
     loginUser()
-
-     
-
  })
- 
+

@@ -4,6 +4,7 @@
   /* border: solid 1px red; */
   font-family: Poppins;
   box-sizing: border-box; 
+  text-decoration: none;
 }
 
 body {
@@ -175,7 +176,8 @@ main {
 }
 
 .question-answer-number {
-  
+  display: flex;
+  justify-content: center;
   font-size: 28px;
   font-weight: 600;
 }

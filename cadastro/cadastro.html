@@ -1,50 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Cadastro</title>
- <link rel="stylesheet" href="./cadastro.css">
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
 
-        <div class="cadastro">
-            
-            <div class="form">
-                
-                <form>
-                    <h2 id="cadastro">Faça seu cadastro</h2>
-                    <p id="cd">Email</p>
-                    <input type="email" placeholder="exemplo@gmail.com" required>
-                    <p id="cd">Senha</p>
-                    <input type="password" placeholder="*****" required>
-                    <p id="cd">Confirme sua senha </p>
-                    <input type="password" placeholder="*****" required>
+   <div class="tudo">
 
-                    <div class="ch"><input type="checkbox">
-                        <p id="teste">Mantenha-me conectado</p>
-                    </div>
-
-                    <button type="submit" id="botao">Cadastrar</button>
-                    <div id="ja_tem">
-                        <p>Já tem uma conta? <a class="link" href="../login/index.html"> Entrar</a></p>
-                    </div>
-                    
-
-                </form>
-            </div>
-        </div>
-        <div class="logo">
-            <img id="logo" src="../assets/Group 29 (1).svg" alt="">
-        </div>
+    <div  class="logo">
+        <img id="logo" src="../assets/Group 29 (2).svg">
     </div>
     
-   
+    <div id="container" >
 
+         <h1 id="login">Faça seu Cadastro</h1>
+
+        <form id="formulario">
+            
+            <div id="input" >
+                <label id="email" for="">Email</label>
+                <input id="botaoEmail" type="email" placeholder="exemplo@gmail.com">
+                <label id="senha" for="">Senha</label>
+                <input id="botaoSenha" type="password" placeholder="*****">
+                <label for="">Confime sua senha</label>
+                <input id="botaoConfirme" type="password" placeholder="*****">
+            </div>
+      
+            <div id="esqueceu" >
+                <div id="check">
+                    <input id="conectado" type="checkbox">
+                    <h3>Mantenha-me conectado</h3>
+                </div>
+        
+                <button type="submit" id="botaoEntrar" > Cadastrar</button>        
+        </form>
+        
+
+        <div id="final" >
+            <p>Já tem uma conta?</p>
+            <a class="Entrar" id="link" href="../login/index.html"><p id="p" >Entrar</p></a>
+        </div>
+      
+    </div>
+   </div>
+            <script src="./cadastro.js"></script>
 </body>
-
 </html>

@@ -33,11 +33,14 @@ async function listQuestions() {
       console.log(questions)
 
       questions.forEach((pergunta) => {
+        console.log(pergunta.id)
         const { title, question, quantidadeDeRespostas } = pergunta
         console.log(title, question, quantidadeDeRespostas)
 
-        let button = document.createElement('button')
-        button.classList.add('btn-questions')
+        let a = document.createElement('a')
+        // window.location.href=`../respostas/respostas.html?id=${pergunta.id}`
+        a.setAttribute("href", `../respostas/respostas.html?id=${pergunta.id}`);
+        a.classList.add('btn-questions')
 
         let divInformations = document.createElement('div')
         divInformations.classList.add('informations')
@@ -69,8 +72,8 @@ async function listQuestions() {
         paragrafoNumber.textContent = quantidadeDeRespostas
         paragrafoWord.textContent = 'Respostas'
 
-        div.appendChild(button)
-        button.append(divInformations, spanAnswer)
+        div.appendChild(a)
+        a.append(divInformations, spanAnswer)
         divInformations.append(img, spanQuestion)
         spanQuestion.append(questionTitle, questionSubtitle)
         spanAnswer.append(paragrafoNumber, paragrafoWord)
