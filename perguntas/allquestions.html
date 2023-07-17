@@ -55,11 +55,13 @@
       <form>
         <h1 class="h1-1"> Titulo da sua pergunta</h1>
         <div class="per">
+          <!-- <textarea name="text" class="titulo" placeholder="Exemplo: Duvida sobre...."></textarea> -->
           <input type="text" name="text" class="titulo" placeholder="Exemplo: Duvida sobre....">
         </div>
         <h1 class="h1-2">Faça uma pergunta</h1>     
         <div class="duvidas">
-          <input type="text" class="pergunta" placeholder = "Escreva aqui...">
+          <textarea name="text" class="pergunta" placeholder ="Escreva aqui..."></textarea>
+          <!-- <input type="text" class="pergunta" > -->
         </div> 
         <h2 class="tags">Tags</h2>
         <div class="btn-tg">
@@ -69,7 +71,7 @@
           <button type="button">Back-End</button>
           <button type="button">Design</button>
         </div>
-        <button type="button" class="btn-enviar" id="close-modal">Enviar</button>  
+        <button type="submit" value="Enviar" class="btn-enviar" id="close-modal">Enviar</button>  
       </form>
     </div>    
   </main>

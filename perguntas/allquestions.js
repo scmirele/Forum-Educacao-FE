@@ -80,3 +80,39 @@ async function listQuestions() {
     }
   }
   listQuestions()
+
+  // async function addQuestions() {
+    
+  //      let newQuestion = {
+  //       "id": 2,
+  //       "question": "Por qual linguagem de programação eu devo começar?",
+  //       "title": "JavaScript ou Java",
+  //       "usuario": "mirele",
+  //       "quantidadeDeRespostas": 1
+  //       }
+    
+  //       const url = 'https://backend-question-production.up.railway.app/perguntas'
+  //       try {
+  //         const data = await fetch(url, {
+  //           method: 'POST',
+  //           headers: {
+  //             'Content-Type': 'application/json'
+  //           },
+  //           body: JSON.stringify(newQuestion),
+  //         })
+  //         const questions = await data.json()
+  //         console.log(questions)
+          
+  //         // questions.forEach((pergunta) => {
+  //         //   const { title, question, quantidadeDeRespostas } = pergunta
+  //         //   console.log(title, question, quantidadeDeRespostas)
+  //         // })
+
+  //         alert('questao criada')
+  //         return data;
+  //       } catch (error) {
+  //         console.log(error)
+  //       }
+  //   }
+    
+  //   addQuestions()
