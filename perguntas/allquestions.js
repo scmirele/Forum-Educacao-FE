@@ -7,14 +7,14 @@ let div = document.querySelector('.questions')
 
 let btnQuestion = document.querySelector('.btn-questions')
 
-const respostas = 'http://127.0.0.1:5501/respostas/respostas.html'
+// const respostas = 'http://127.0.0.1:5501/respostas/respostas.html'
 
-function openAnswer(respostas) {
-   window.open(respostas, '_blank')
-}
-btnQuestion.addEventListener('click', () => {
-  openAnswer(respostas)
-})
+// function openAnswer(respostas) {
+//    window.open(respostas, '_blank')
+// }
+// div.addEventListener('click', () => {
+//   openAnswer(respostas)
+// })
 
 const toggleModal = () => {
   [modal, fade].forEach((elemento) => elemento.classList.toggle("hide"));
@@ -47,7 +47,7 @@ async function listQuestions() {
 
         let img = document.createElement('img')
         img.classList.add('icon-check')
-        img.setAttribute('src', '../assets/icon-status-disable.svg')
+        img.setAttribute('src', '../assets/icon-status.svg')
 
         let spanQuestion = document.createElement('span')
         spanQuestion.classList.add('question')
