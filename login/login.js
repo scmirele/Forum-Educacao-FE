@@ -26,20 +26,18 @@ async function loginUser(){
         if(email.value && senha.value){
             const dataLogin = await responseLogin.json()
             console.log(dataLogin)
-            window.location.href="http://127.0.0.1:5501/perguntas/allquestions.html"
-
-            button.addEventListener('click',(e)=>{
-                e.preventDefault()
-                const info ={
-                    id: dataLogin.id,
-                    nome: dataLogin.nome,
-                    email: dataLogin.email,
-                    senha: dataLogin.senha,
-                    img: dataLogin.img
-                }
-                localStorage.setItem('info' ,JSON.stringify(info))
-             })
+        
+            const info ={
+                id: dataLogin.id,
+                nome: dataLogin.nome,
+                email: dataLogin.email,
+                senha: dataLogin.senha,
+                img: dataLogin.img
+            }
+            localStorage.setItem('info' ,JSON.stringify(info))
             
+            
+            window.location.href="http://127.0.0.1:5501/perguntas/allquestions.html"
         }else{
             alert('Preencha todos os campos vazios!')
         }    

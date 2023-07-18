@@ -11,7 +11,11 @@
 </head>
 <body>
     <header class="container">
-        <img class="icon-logo" id="logo" src="../assets/logo.svg" alt="logo ">
+        <button id="voltarLogo">
+            <a href="http://127.0.0.1:5501/perguntas/allquestions.html"><img class="icon-logo" id="logo" src="../assets/logo.svg" alt="logo ">
+            </a>  
+        </button>
+        
         <div class="div-search">
           <input class="search" src="../assets/icon-search.svg" type="search" 
           placeholder="Procure por uma resposta">
@@ -22,23 +26,21 @@
 
     <div id="content">
         <div class="publi">
-            <h1 class="h1-title">Where does it come from?</h1>
+            <h1 class="h1-title"></h1>
             <p class="p-date">Publicado 3 meses atrás.</p>
-            <span class="span">Back-End</span>
         </div>
     
-        <!--parte do meio-->
         <div class="question">
-            <div class="img-ques"><img src="../assets/img-people (3).png" alt=""></div>
+            <div class="img-ques"><img src="../assets/icon-user.png" width="150px" height="150px" alt=""></div>
             <div class="h1-ques">
-                <h1 class="name-people">Maria José Da Silva</h1>
+                <h1 class="name-people"></h1>
                 <p class="description">Essentially unchanged. It was popularised in the 1960s with the release 
                 of Letraset sheets containing</br>Lorem Ipsum passages, and more recently with 
                 desktop publishing software like Aldus PageMaker</br>including versions of Lorem Ipsum?</p>
-                <form  id="formulario" action="submit">
+                <form  id="formulario">
                     <div class="send">
                         <input class="res" type="text" placeholder="Responder pergunta">
-                        <img src="../assets/icon-send.svg" alt="icon enviar" class="icon-send">
+                        <button id="icon-enviar" type="submit"><img src="../assets/icon-send.svg" alt="icon enviar" class="icon-send"></button>
                     </div>
                 </form>
             </div>  
@@ -47,37 +49,6 @@
         <div class="resposta-linha">
           <h1 class="respostas">Respostas</h1>
           <div class="linha"></div>
-        </div>
-    
-        <!--div da parte de baixo !-->
-        <div class="mae">
-            <div class="filho-1"><img src="../assets/img-people (4).png" alt="">
-                <h2 class="nome">Luis Amancio</h2>
-                <img src="../assets/icon-like.png" alt="" id="like">  
-                <img src="../assets/icon-comment.png" alt="">   
-            </div>
-            <p class="paragrafo">Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus <br>
-               PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-    
-        <div class="mae">
-            <div class="filho-1"><img src="../assets/img-people (1).png" alt="">
-                <h2 class="nome">Otavio Rocha</h2>
-                <img src="../assets/icon-like.png" alt="" id="like">
-                <img src="../assets/icon-comment.png" alt="">
-            </div>
-            <p class="paragrafo">Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus <br>
-              PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-    
-        <div class="mae">
-            <div class="filho-1"><img src="../assets/img-people (2).png" alt="">
-                <h2 class="nome">Jorge Miguel</h2>
-                <img src="../assets/icon-like.png" alt="" id="like">
-                <img src="../assets/icon-comment.png" alt="">
-            </div>
-            <p class="paragrafo">Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus <br>
-              PageMaker including versions of Lorem Ipsum.</p>
         </div>
     </div>
     <script src="respostas.js"></script>

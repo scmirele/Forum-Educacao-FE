@@ -278,9 +278,11 @@ form {
   border: none;
   outline: none;
   font-weight: 500;
-  padding: 20px 535px 117px 0px;
+  padding: 10px 35px 10px 0px;
+  box-sizing: border-box;
   margin-left: 25px;
   background: transparent;
+  resize: none;
 }
 
 
@@ -330,8 +332,19 @@ form {
   width: 133px;
   height: 45px;
   border-radius: 10px;
-  margin-top: 15px;
+  margin-top: 30px;
   border: none;
   background-color:#0C32FE;
   color: white;
+}
+
+#botaoSair{
+  width: 100px;
+  height: 41px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  color: white;
+  background-color: #E00000;
+  border-radius: 10px;
 }

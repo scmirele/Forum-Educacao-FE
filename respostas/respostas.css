@@ -67,8 +67,6 @@ body {
     background: rgba(77, 83, 244, 1);
   }
   
-  /* segunda parte */
-  
   .publi{
     display: flex;
     flex-direction: column;
@@ -171,8 +169,7 @@ body {
     margin-right:75px;
     background-color:rgba(27, 27, 27, 0.5);
   }
-  /* depois de respostas*/
-  
+ 
   .filho-1{
     display: flex;
     align-items: center;
@@ -180,7 +177,8 @@ body {
   }
   
   .nome{
-    margin-right: 790px;
+    margin-right: auto;
+    margin-left: 10px;
   }
   
 .paragrafo{
@@ -189,4 +187,13 @@ body {
   font-weight: 500;
   margin-top: 20px;
 }
-  
+
+#icon-enviar{
+  background-color: transparent;
+  margin-top: 5px;
+  border: none;
+}
+#voltarLogo{
+  border: none;
+  background-color: transparent;
+}

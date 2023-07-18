@@ -24,7 +24,7 @@ async function CreateUser(){
         })
         if(email.value && senha.value && nome.value){
             alert('Usuário cadastrado com sucesso!')
-            // window.location.href="http://127.0.0.1:5501/login/index.html"
+            window.location.href="http://127.0.0.1:5501/login/index.html"
             form.reset();
         }else{
             alert('Preencha todos os campos vazios!')
