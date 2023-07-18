@@ -2,6 +2,9 @@ let openModalButton = document.querySelector('#open-modal');
 let closeModalButton = document.querySelector('#close-modal');
 let fade = document.querySelector('#fade');
 let modal = document.querySelector('#modal');
+let titulo = document.querySelector('.titulo');
+let textarea = document.querySelector('.pergunta');
+let form = document.querySelector('#formulario')
 
 let div = document.querySelector('.questions')
 
@@ -84,38 +87,35 @@ async function listQuestions() {
   }
   listQuestions()
 
-  // async function addQuestions() {
-    
-  //      let newQuestion = {
-  //       "id": 2,
-  //       "question": "Por qual linguagem de programação eu devo começar?",
-  //       "title": "JavaScript ou Java",
-  //       "usuario": "mirele",
-  //       "quantidadeDeRespostas": 1
-  //       }
-    
-  //       const url = 'https://backend-question-production.up.railway.app/perguntas'
-  //       try {
-  //         const data = await fetch(url, {
-  //           method: 'POST',
-  //           headers: {
-  //             'Content-Type': 'application/json'
-  //           },
-  //           body: JSON.stringify(newQuestion),
-  //         })
-  //         const questions = await data.json()
-  //         console.log(questions)
-          
-  //         // questions.forEach((pergunta) => {
-  //         //   const { title, question, quantidadeDeRespostas } = pergunta
-  //         //   console.log(title, question, quantidadeDeRespostas)
-  //         // })
 
-  //         alert('questao criada')
-  //         return data;
-  //       } catch (error) {
-  //         console.log(error)
-  //       }
-  //   }
+  async function CadastrarPergunta(){
+    const urlPergunta = 'https://backend-question-production.up.railway.app/perguntas'
+
+    var user = JSON.parse(localStorage.getItem('info'));
     
-  //   addQuestions()
+
+    let dados ={
+      usuario : user.id,
+      title : titulo.value,
+      question : textarea.value
+    }
+
+    try {
+      const responsePergunta = await fetch(urlPergunta, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(dados)
+    })
+    
+    alert('Pergunta enviada com sucesso!')
+
+    } catch (error) {
+      
+    }
+  }
+  form.addEventListener('submit',(e)=>{
+    e.preventDefault()
+    CadastrarPergunta()
+ })

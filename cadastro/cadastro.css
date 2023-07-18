@@ -32,7 +32,7 @@
     flex-direction: column;   
 }
 
-#botaoEmail, #botaoSenha ,#botaoConfirme{
+#botaoEmail, #botaoSenha ,#botaoConfirme,#botaoNome{
     width: 500px;
     height: 50px;
     border-radius: 50px;

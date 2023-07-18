@@ -110,10 +110,11 @@ font-weight: 700;
 }
 
 .cadastro{
-  color: #2A2E86;
+  color: #4D53F4;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
+  margin-left: 5px;
 }
 .tudo{
   display: flex; 

@@ -22,12 +22,14 @@ async function loginUser(){
             body: JSON.stringify(dados)
         })
 
-        if(email && senha ){
+
+        if(email.value && senha.value){
             const dataLogin = await responseLogin.json()
             console.log(dataLogin)
             window.location.href="http://127.0.0.1:5501/perguntas/allquestions.html"
 
-            button.addEventListener('click',()=>{
+            button.addEventListener('click',(e)=>{
+                e.preventDefault()
                 const info ={
                     id: dataLogin.id,
                     nome: dataLogin.nome,
@@ -37,13 +39,13 @@ async function loginUser(){
                 }
                 localStorage.setItem('info' ,JSON.stringify(info))
              })
-             
+            
         }else{
             alert('Preencha todos os campos vazios!')
         }    
         
     } catch (error) {
-        alert('Usuário não encontrado!')
+            alert('Usuário não encontrado!')
     }
 }
 

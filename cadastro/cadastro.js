@@ -1,27 +1,36 @@
 let email = document.querySelector('#botaoEmail')
 let senha = document.querySelector('#botaoSenha')
+let nome = document.querySelector('#botaoNome')
 let button = document.querySelector('#botaoEntrar')
-let confirme = document.querySelector('#botaoConfirme')
 let form = document.querySelector('#formulario')
 
 
-async function CreteUser(){
-    const urlUsuario = 'https://backend-question-production.up.railway.app/usuarios'
+async function CreateUser(){
+    const urlCadastros = 'https://backend-question-production.up.railway.app/usuarios'
 
     let dados = {
         email: email.value,
         senha: senha.value,
-        confirme: confirme.value
+        nome : nome.value 
     }
 
     try {
-        const responseLogin = await fetch(urlUsuario, {
+        const responseCadastro = await fetch(urlCadastros, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(dados)
         })
+        if(email.value && senha.value && nome.value){
+            alert('Usuário cadastrado com sucesso!')
+            // window.location.href="http://127.0.0.1:5501/login/index.html"
+            form.reset();
+        }else{
+            alert('Preencha todos os campos vazios!')
+        }
+
+       return responseCadastro
     } catch (error) {
         alert('Usuário não encontrado!')
     }
@@ -29,6 +38,6 @@ async function CreteUser(){
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault()
-    loginUser()
+    CreateUser()
  })
 
