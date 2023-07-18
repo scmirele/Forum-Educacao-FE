@@ -45,18 +45,18 @@ async function listAnswer(id) {
 
       let img = document.createElement('img')
       img.setAttribute('src', '../assets/icon-user.png')
-      img.style.width = '80px'
-      img.style.height = '80px'
+      img.style.width = '50px'
+      img.style.height = '50px'
       
-      // let imgLike = document.createElement('img')
-      // imgLike.setAttribute('src', '../assets/icon-like.png')
+      let imgLike = document.createElement('img')
+      imgLike.setAttribute('src', '../assets/icon-like.png')
 
       // let imgComment = document.createElement('img')
       // imgComment.setAttribute('src', '../assets/icon-comment.png')
 
       content.append(divMae)
       divMae.append(divFilho, answerTwo)
-      divFilho.append(img, nameAnswer)
+      divFilho.append(img, nameAnswer , imgLike)
     });
     
 

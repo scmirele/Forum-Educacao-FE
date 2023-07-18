@@ -183,9 +183,10 @@ body {
   
 .paragrafo{
   color: #1B1B1B;
+  margin-left: 60px;
   font-size: 20px;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #icon-enviar{
