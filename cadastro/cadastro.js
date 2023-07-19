@@ -5,13 +5,32 @@ let button = document.querySelector('#botaoEntrar')
 let form = document.querySelector('#formulario')
 
 
+
 async function CreateUser(){
     const urlCadastros = 'https://backend-question-production.up.railway.app/usuarios'
+
+    const imagem = Math.floor(Math.random() * 5);
+    let img = document.createElement('img')
+    switch(imagem){
+        case 1 :
+             img.setAttribute('src', '../assets/1.svg');
+        case 2 :
+            img.setAttribute('src', '../assets/2.svg');
+        case 3 :
+            img.setAttribute('src', '../assets/3.svg');
+        case 4 : 
+            img.setAttribute('src', '../assets/4.svg');
+        case 5 : 
+            img.setAttribute('src', '../assets/5.svg');
+        
+    }
 
     let dados = {
         email: email.value,
         senha: senha.value,
-        nome : nome.value 
+        nome : nome.value,
+        img : img.value
+        
     }
 
     try {

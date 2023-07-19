@@ -21,6 +21,27 @@ async function listAnswer(id) {
     let name = document.querySelector('.name-people')
     name.textContent = pergunta.usuario.nome
 
+    
+
+    const imagem = Math.floor(Math.random() * 5);
+    let perfil = document.querySelector('#perfil1')
+      switch(imagem){
+          case 0 :
+               perfil.setAttribute('src', '../assets/1.svg');
+               break;
+          case 1 :
+              perfil.setAttribute('src', '../assets/2.svg');
+              break;
+          case 2 :
+              perfil.setAttribute('src', '../assets/3.svg');
+              break;
+          case 3 : 
+              perfil.setAttribute('src', '../assets/4.svg');
+              break;
+          case 4 : 
+              perfil.setAttribute('src', '../assets/5.svg');
+      }
+
 
     let questionDescription = document.querySelector('.description')
     questionDescription.textContent = pergunta.question
@@ -43,20 +64,38 @@ async function listAnswer(id) {
       let divFilho = document.createElement('div')
       divFilho.classList.add('filho-1')
 
+      const imagem = Math.floor(Math.random() * 5);
       let img = document.createElement('img')
-      img.setAttribute('src', '../assets/icon-user.png')
+      switch(imagem){
+          case 0 :
+               img.setAttribute('src', '../assets/1.svg');
+               break;
+          case 1 :
+              img.setAttribute('src', '../assets/2.svg');
+              break;
+          case 2 :
+              img.setAttribute('src', '../assets/3.svg');
+              break;
+          case 3 : 
+              img.setAttribute('src', '../assets/4.svg');
+              break;
+          case 4 : 
+              img.setAttribute('src', '../assets/5.svg');
+      }
       img.style.width = '50px'
       img.style.height = '50px'
       
-      let imgLike = document.createElement('img')
-      imgLike.setAttribute('src', '../assets/icon-like.png')
+      // let imgLike = document.createElement('img')
+      // imgLike.setAttribute('src', '../assets/icon-like.png')
+
+      // imgLike.classList.add('like')
 
       // let imgComment = document.createElement('img')
       // imgComment.setAttribute('src', '../assets/icon-comment.png')
 
       content.append(divMae)
       divMae.append(divFilho, answerTwo)
-      divFilho.append(img, nameAnswer , imgLike)
+      divFilho.append(img, nameAnswer)
     });
     
 
@@ -93,7 +132,7 @@ async function CadastrarResposta(pergunta){
   })
   console.log(responseResposta)
   
-  alert('Resposta enviada com sucesso!')
+  //alert('Resposta enviada com sucesso!')
   window.location.reload(true);
   form.reset();
   
@@ -107,3 +146,13 @@ form.addEventListener('submit',(e)=>{
   e.preventDefault()
   CadastrarResposta(perguntaId)
 })
+
+
+// async function cor(imgLike){
+    
+// }
+imgLike.addEventListener('click',()=>{
+    imgLike.style.backgroudColor = 'red'
+    console.log(imgLike)
+})
+
