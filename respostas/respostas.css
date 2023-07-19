@@ -111,18 +111,21 @@ body {
   }
 
   .name-people {
+    margin-left: 34px;
     color: #1B1B1B;
     font-size: 28px;
     font-weight: 600;
   }
 
   .description {
+    margin-left: 34px;
     color:#1B1B1B;
     font-size: 20px;
     font-weight: 500;
   }
 
   .send {
+    margin-left: 34px;
     margin-top: 16px;
     display: flex;
     align-items: center;
@@ -178,15 +181,15 @@ body {
   
   .nome{
     margin-right: auto;
-    margin-left: 10px;
+    margin-left: 30px;
   }
   
 .paragrafo{
   color: #1B1B1B;
-  margin-left: 60px;
+  /* margin-left: 60px; */
   font-size: 20px;
   font-weight: 500;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 #icon-enviar{

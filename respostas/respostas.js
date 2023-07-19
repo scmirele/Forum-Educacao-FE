@@ -44,9 +44,9 @@ async function listAnswer(id) {
       divFilho.classList.add('filho-1')
 
       let img = document.createElement('img')
-      img.setAttribute('src', '../assets/icon-user.png')
-      img.style.width = '50px'
-      img.style.height = '50px'
+      img.setAttribute('src', '../assets/icon-user.svg')
+      img.style.width = '60px'
+      img.style.height = '60px'
       
       let imgLike = document.createElement('img')
       imgLike.setAttribute('src', '../assets/icon-like.png')
